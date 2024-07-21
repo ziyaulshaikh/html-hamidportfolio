@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .st2{
+        color: aliceblue;
+        background-color: rgb(169, 84, 169);
+        text-align: center;
+        border: 5px solid rgb(169, 205, 236);
+    }
+    .st3{
+        color: black;
+        background-color: white;
+        text-align: center;
+    }
+    .st4{
+        background-color: rgb(157, 232, 232);
+    }
+    .st5{
+        text-align: center;
+        background-color: rgb(89, 89, 219);
+        height: 40px;
+    }
+    body {
+      font-family: 'Sono', sans-serif;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+    }
+
+    .pricing-plan {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .plan-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-price {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .plan-features li {
+      margin-bottom: 20px;
+    }
+
+    .plan-button {
+      padding: 10px;
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+    }
+
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+
+    .logo{
+      background-color: coral;
+      text-align: center;
+      font-size: 30px;
+
+    }
+  </style>
+</head>
+
+<body>
+    <div class="st1">
+        <div class="st2">
+           <marquee direction="left to right"> <h1 style="color: red;">HAMID TOURS AND TRAVELS</h1></marquee>
+
+            <button><a href="./home.html">home</a></button>
+            <button><a href="./about.html">about</a></button>
+            <button><a href="./contact.html">contact</a></button>
+        </div>
+        <div class="st3">
+            <img src="./cars.png" alt="cars">
+            <h2 style="background-color: aqua;">HAMID TOURS AND TRAVELS</h2>
+            <button class="st4" style="background-color: greenyellow;">checkout with these future plan</button>
+        </div>
+
+        <div class="st5">
+            <h3>Our goal is full fill your sweet dreams</h3>
+        </div>
+    </div>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$11.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button"><a href="./home.html">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button"><a href="./home.html">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button"><a href="./home.html">Sign Up</a>
+    </div>
+  </div>
+
+  <div class="logo">
+          POWER BY IT STUDENTS HAMID
+  </div>
+
+</body>
+
+</html>
